@@ -1,0 +1,40 @@
+
+ /*Sets the height and width of all elements in class box */
+.box {
+  width: 200px;
+  height: 200px
+}
+
+/* Sets text & background color for all elements in class blue-box */
+.box-blue {
+  color: white;
+  /* Multiple methods to define color*/
+  background-color: #0000ff;
+}
+
+/* Sets font style for all elements in class box-orange*/
+.box-orange {
+  /* Font-family property specifies a list of fonts to be used in order of priority (some browsers don't have certain fonts) */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: orange;
+}
+
+/* Sets distance between lines of text in id box-yellow */
+#box-yellow {
+  line-height: 100px;
+  background-color: yellow;
+}
+
+/* font-size sets size of a font of text in class box-pink*/
+.box-pink {
+  font-size: 26px;
+  background-color: pink;
+}
+
+/* Set font weight of text in class box-green */
+#box-green {
+  font-weight: bolder;
+  background-color: green;
+}
+
+;

@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+main {
+  /* the element becomes a flex container*/
+  display: flex; 
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
+.main-header {
+  display: flex;
+
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+
+  /* Align flex items along the main axis (first item at the start, last item at the end and remaining space divided equally around the items) */
+  justify-content: space-between;
+
+  padding: 60px;
+  background: #13293d;
+  color: #fff;
+}
+
+.card {
+
+  /* card will grow in 1:1 ratio with other elements when there is extra room . */
+  /* card will shrink in 1:1 ratio with other elements when there is not enough room*/
+  /* initial size of the card element */
+  flex: 1 1 auto;
+
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.card header {
+  padding: 20px;
+  background: #13293d;
+  color: #fff;
+}
+
+/* size of img in card elements cannot go under 400px on any screen size*/
+.card img {
+  width: 100%;
+  min-width: 400px;
+}

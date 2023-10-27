@@ -1,0 +1,117 @@
+body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+  
+    /*line height is 1.5x the font height*/
+    line-height: 1.5;
+  
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #13293d;
+    color: #fff;
+  }
+  
+  h1 {
+    /*font size is 200% the size of the parent element*/
+    font-size: 200%;
+    /*margin size is 3% the size of the parent element*/
+    margin: 3%;
+    font-family: serif;
+  }
+  
+  h2 {
+    font-size: 175%;
+    margin: 3%;
+    font-family: serif;
+  }
+  
+  
+  h3 {
+    font-size: 150%;
+    margin: 5%;
+    font-family: serif;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+  }
+  
+  nav a {
+    color: #b9c6ae;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    flex: 1 1 0;
+    max-width: 1200px;
+    margin: 2% auto;
+  }
+  
+  section {
+    flex: 1 1 0;
+    padding-right: 5%;
+  }
+  
+  article {
+    border-bottom: 1px solid #d8a47f;
+  }
+  
+  
+  article p {
+    margin: 3%;
+  }
+  
+  article ul {
+  
+    /*set margin as 8% left and right with square bullet points*/
+    margin: 0 8%;
+    list-style: square;
+  
+    font-family: monospace;
+  }
+  
+  aside {
+    width: 25%;
+  }
+  
+  input,
+  button {
+    width: 100%;
+    margin: 2% 0;
+    padding: 1%;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: #13293d;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header,
+    main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+    }
+  
+    aside {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

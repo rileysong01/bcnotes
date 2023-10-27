@@ -1,0 +1,50 @@
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  border: 10px solid darkblue;
+  background-color: lightblue;
+}
+
+/* dictates properties for all sections except the absolute-section*/
+section {
+  height: 400px;
+  width: 80%;
+  margin: 30px auto;
+  border: 10px solid black;
+}
+
+/* Relative positioning (can control offset, relative to the parent element, NOT REMOVED from normal document flow)*/
+#relative-box {
+  position: relative;
+  /* child element is moved 200 RIGHT from its original position in the noram document flow*/
+  left: 200px;
+}
+
+/* the parent element must be relative for an absolute positioned child*/
+#absolute-section {
+  position: relative;
+}
+
+/* Absolute positioning (not relative to its parent, REMOVED from document flow)*/
+#absolute-box {
+  position: absolute;
+  /* child element is moved 50 down from its original position in the normal document flow */
+  top: 50px;
+  right: 100px;
+  /* sets the stacking order of this box (higher value = on top)*/
+  z-index:1;
+}
+
+/* Fixed positioning (relative to the viewport/window)*/
+#fixed-box {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  /* sets the stacking order of this box*/
+  z-index:2;
+}
